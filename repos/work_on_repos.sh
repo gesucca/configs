@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd ~/ramdisk
+cd /mnt/ramdisk
 # only active repos
 
 if [ "$1" = "conf" ]; then
-	git clone --depth=3 https://github.com/gesucca/dots-and-scripts.git
+	git clone --depth=3 https://github.com/gesucca/configs.git
 fi
 
 if [ "$1" = "write" ]; then
