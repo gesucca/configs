@@ -9,7 +9,7 @@ yes | cp configs/dots/dumpdots.sh ~/Desktop/.dumpdots.sh
 yes | cp configs/repos/github_sync.sh ~/Desktop/.github_sync.sh
 yes | cp configs/repos/work_on_repos.sh ~/Desktop/.work_on_repos.sh
 
-yes | cp config/dots/zshrc ~/.zshrc
-yes | cp config/dots/vimrc ~/.vimrc
+yes | cp configs/dots/zshrc ~/.zshrc
+yes | cp configs/dots/vimrc ~/.vimrc
 
 yes | rm -rf configs
