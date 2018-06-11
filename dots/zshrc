@@ -13,13 +13,16 @@ alias clean='sudo apt autoclean && sudo apt autoremove -y'
 
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
+alias reporc='vim ~/Desktop/.work_on_repos.sh'
+alias syncrc='vim ~/Desktop/.github_sync.sh'
+
 alias loaddots='sh ~/Desktop/.loaddots.sh'
 alias dumpdots='sh ~/Desktop/.dumpdots.sh'
 
 alias walr='cd ~/Pictures/Wal && wal -i $(ls | sort -R | tail -1)'
 
 alias gitsync='sh ~/Desktop/.github_sync.sh'
-alias repo='sh ~/Desktop/.work_on_repos.sh && cd ~/ramdisk'
+alias repo='sh ~/Desktop/.work_on_repos.sh'
 
 alias wifi='nmcli dev wifi; nmcli dev wifi connect -ask'
 alias pg='ping www.google.com'
