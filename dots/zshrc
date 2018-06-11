@@ -14,6 +14,7 @@ alias clean='sudo apt autoclean && sudo apt autoremove -y'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias loaddots='sh ~/Desktop/.loaddots.sh'
+alias dumpdots='sh ~/Desktop/.dumpdots.sh'
 
 alias walr='cd ~/Pictures/Wal && wal -i $(ls | sort -R | tail -1)'
 
