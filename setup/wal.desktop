@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RunPywal
+GenericName=Run Pywal
+Comment=Run pywal with cached color scheme
+Exec=wal -R
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true

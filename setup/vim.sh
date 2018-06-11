@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 sudo apt install vim -y
 sudo apt install powerline fonts-powerline -y
