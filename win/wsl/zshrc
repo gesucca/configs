@@ -1,0 +1,29 @@
+export ZSH=/home/gesucca/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
+
+ENABLE_CORRECTION="true"
+
+# ALIASES
+
+alias upgrade='sudo apt update && sudo apt upgrade -y && clean'
+alias clean='sudo apt autoclean && sudo apt autoremove -y'
+
+alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/.vimrc'
+alias syncrc='vim ~/Desktop/.github_sync.sh'
+
+alias gitsync='sh ~/Desktop/.github_sync.sh'
+
+alias pg='ping www.google.com'
+
+# FUNCTIONS
+
+function gitall() {
+	git status;
+	git add .;
+	[ -n "$1" ] && git commit -m "$1" || git commit;
+	git push;
+	git clean -xf
+}
+
