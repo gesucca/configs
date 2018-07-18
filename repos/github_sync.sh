@@ -8,8 +8,9 @@ gitsync() {
     echo '#################'
     pwd
     echo '#################'
-    git clean -xf
-    git fetch --all
+	git reset --hard HEAD
+    git clean -xdf
+    git fetch --all --prune
     git pull --all
     git gc
     echo '############ done'

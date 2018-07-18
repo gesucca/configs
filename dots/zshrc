@@ -37,7 +37,11 @@ function gitall() {
 	git add .;
 	[ -n "$1" ] && git commit -m "$1" || git commit;
 	git push;
-	git clean -xf
+	git clean -xdf
+}
+
+function gitback() {
+	git reset --hard HEAD~"$1"
 }
 
 
