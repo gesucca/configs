@@ -1,0 +1,45 @@
+export ZSH=/home/gesucca/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
+
+ENABLE_CORRECTION="true"
+
+
+# ALIASES
+
+alias walr='cd /usr/share/antergos/wallpapers/ && wal -i $(ls | sort -R | tail -1)'
+
+alias gitsync='sh ~/Desktop/.github_sync.sh'
+alias repo='sh ~/Desktop/.work_on_repos.sh'
+
+alias wifi='nmcli dev wifi; nmcli dev wifi connect -ask'
+alias pg='ping www.google.com -c 3'
+
+alias bye='shutdown now'
+
+
+# FUNCTIONS
+
+function gitall() {
+	git status;
+	git add .;
+	[ -n "$1" ] && git commit -m "$1" || git commit;
+	git push;
+	git clean -xdf
+}
+
+function gitback() {
+	git reset --hard HEAD~"$1"
+}
+
+
+# Import colorscheme from wal asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
