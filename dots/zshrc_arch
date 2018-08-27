@@ -7,6 +7,8 @@ ENABLE_CORRECTION="true"
 
 # ALIASES
 
+alias please='sudo $(fc -ln -1)'
+
 alias walr='cd /usr/share/antergos/wallpapers/ && wal -i $(ls | sort -R | tail -1)'
 
 alias gitsync='sh ~/Desktop/.github_sync.sh'
