@@ -8,6 +8,7 @@ ENABLE_CORRECTION="true"
 # ALIASES
 
 alias please='sudo $(fc -ln -1)'
+alias clean='sudo pacman -Rns $(pacman -Qtdq)'
 
 alias walr='cd /usr/share/antergos/wallpapers/ && wal -i $(ls | sort -R | tail -1)'
 
