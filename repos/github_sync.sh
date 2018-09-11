@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Desktop
+cd ~/Repo
 
 # cannot bother doing a for loops
 

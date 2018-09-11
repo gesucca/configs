@@ -10,13 +10,13 @@ ENABLE_CORRECTION="true"
 alias please='sudo $(fc -ln -1)'
 alias clean='sudo pacman -Rns $(pacman -Qtdq)'
 
-alias walr='cd /usr/share/antergos/wallpapers/ && wal -i $(ls | sort -R | tail -1)'
+alias walr='cd ~/Pictures && wal -i $(ls | sort -R | tail -1)'
 
-alias gitsync='sh ~/Desktop/.github_sync.sh'
-alias repo='sh ~/Desktop/.work_on_repos.sh'
+alias gitsync='sh ~/Repos/.github_sync.sh'
+alias repo='sh ~/Repos/.work_on_repos.sh'
 
 alias wifi='nmcli dev wifi; nmcli dev wifi connect -ask'
-alias pg='ping www.google.com -c 3'
+alias ping='ping google.com -c 3'
 
 alias bye='shutdown now'
 
