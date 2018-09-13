@@ -4,5 +4,14 @@ sudo pacman -S plasma-meta
 sudo pacman -S kdegraphics-meta kdemultimedia-meta kdeutils-meta
 sudo pacman -S terminology dolphin kwrite kfind
 
-echo "RUN: systemctl enable sddm.service"
+echo "LOOK INSIDE THIS SCRIPT "
 
+# display manager
+# systemctl enable sddm.service
+
+# network applet (inside a plasma session)
+# pacman -S plasma-nm
+# systemctl stop dhcpcd
+# systemctl disable dhcpcd
+# systemctl enable NetworkManager
+# systemctl start NetworkManager
