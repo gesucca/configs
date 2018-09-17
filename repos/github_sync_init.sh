@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yes | cp github_sync.sh ~/Repos/.github_sync.sh
-yes | cp github_sync.sh ~/Repos/.work_on_repos.sh
+yes | cp work_on_repos.sh ~/Repos/.work_on_repos.sh
 yes | cp gitconfig ~/.gitconfig
 cd ~/Repos
 
