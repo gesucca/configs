@@ -9,3 +9,4 @@ trizen -S dnsenum dnsmap
 
 # cool stuff
 trizen -S googler
+sudo pacman -S thefuck
