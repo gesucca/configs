@@ -1,17 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S plasma-meta
-sudo pacman -S kdegraphics-meta kdemultimedia-meta kdeutils-meta
-sudo pacman -S konsole dolphin kwrite kfind
+sudo pacman -S plasma-meta sddm
+sudo pacman -S kdegraphics-meta kdemultimedia-meta kdeutils-meta kdebase-meta
 
-echo "LOOK INSIDE THIS SCRIPT "
-
-# display manager
-# systemctl enable sddm.service
-
-# network applet (inside a plasma session)
-# pacman -S plasma-nm
-# systemctl stop dhcpcd
-# systemctl disable dhcpcd
-# systemctl enable NetworkManager
-# systemctl start NetworkManager
+systemctl enable sddm.service
