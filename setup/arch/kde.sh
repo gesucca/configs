@@ -2,7 +2,7 @@
 
 sudo pacman -S plasma-meta
 sudo pacman -S kdegraphics-meta kdemultimedia-meta kdeutils-meta
-sudo pacman -S terminology dolphin kwrite kfind
+sudo pacman -S konsole dolphin kwrite kfind
 
 echo "LOOK INSIDE THIS SCRIPT "
 
