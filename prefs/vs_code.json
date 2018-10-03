@@ -2,17 +2,12 @@
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Default Dark+",
     "window.restoreWindows": "none",
     "editor.fontFamily": "'Ubuntu Mono'",
     "editor.fontSize": 16,
     "editor.wordWrap": "on",
-    "editor.formatOnSave": true,
     "files.exclude": {
         "**/.*": true
-    },
-    "languageTool.language": "en",
-    "[html]": {
-        "editor.formatOnSave": false
     }
 }
