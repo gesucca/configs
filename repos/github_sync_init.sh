@@ -12,4 +12,5 @@ git clone https://github.com/gesucca/final-project-unifi.git
 git clone https://github.com/gesucca/pastablaster.git
 git clone https://github.com/gesucca/refogen.git
 git clone https://github.com/gesucca/enigmax.git
+git clone https://github.com/gesucca/saitama.git
 

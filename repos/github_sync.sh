@@ -5,15 +5,25 @@ cd ~/Repos
 # cannot bother doing a for loops
 
 gitsync() {
-    echo '#################'
-    pwd
-    echo '#################'
-	git reset --hard HEAD
+  echo '#################'
+  pwd
+  echo '#################'
+    git reset --hard HEAD
     git clean -xdf
     git fetch --all --prune
     git pull --all
     git gc
-    echo '############ done'
+  echo '############ done'
+}
+
+gitsync_noreset() {
+  echo '#################'
+  pwd
+  echo '#################'
+    git fetch --all --prune
+    git pull --all
+    git gc
+  echo '############ done'
 }
 
 cd final-project-unifi
@@ -42,4 +52,8 @@ cd ..
 
 cd enigmax
 gitsync
+cd ..
+
+cd saitama
+gitsync_noreset
 cd ..
