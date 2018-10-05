@@ -20,7 +20,6 @@ gitsync_noreset() {
   echo '#################'
   pwd
   echo '#################'
-    git fetch --all --prune
     git pull --all
     git gc
   echo '############ done'
