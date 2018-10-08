@@ -1,0 +1,31 @@
+# OH-MY-ZSH STUFF
+export ZSH=/Users/gesucca/.oh-my-zsh
+ZSH_THEME="refined"
+source $ZSH/oh-my-zsh.sh
+
+ENABLE_CORRECTION="true"
+
+plugins=(… zsh-completions)
+autoload -U compinit && compinit
+
+
+# ALIASES
+
+alias gitsync='sh ~/Repos/.github_sync.sh'
+alias repo='sh ~/Repos/.work_on_repos.sh'
+eval $(thefuck --alias)
+
+
+# FUNCTIONS
+
+function gitall() {
+	git status;
+	git add .;
+	[ -n "$1" ] && git commit -m "$1" || git commit;
+	git push;
+}
+
+function gitback() {
+	git reset --hard HEAD~"$1"
+}
+
