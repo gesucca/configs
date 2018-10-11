@@ -56,3 +56,8 @@ cd ..
 cd saitama
 gitsync_noreset
 cd ..
+
+cd eviloutpost.github.io
+gitsync
+cd ..
+
