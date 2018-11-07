@@ -61,3 +61,6 @@ cd eviloutpost.github.io
 gitsync
 cd ..
 
+cd notes
+gitsync
+cd ..
