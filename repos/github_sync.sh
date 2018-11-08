@@ -2,8 +2,6 @@
 
 cd ~/Repos
 
-# cannot bother doing a for loops
-
 gitsync() {
   echo '#################'
   pwd
@@ -16,51 +14,69 @@ gitsync() {
   echo '############ done'
 }
 
-gitsync_noreset() {
+gitsync_noclean() {
   echo '#################'
   pwd
   echo '#################'
+    git reset --hard HEAD
+    git fetch --all --prune
     git pull --all
     git gc
   echo '############ done'
 }
 
-cd final-project-unifi
-gitsync
-cd ..
+if [ "$1" = "mine" ] || [ "$#" = 0 ]; then
+  echo "Syncing personal repositories..."
 
-cd configs
-gitsync
-cd ..
+  cd final-project-unifi
+  gitsync
+  cd ..
 
-cd writings
-gitsync
-cd ..
+  cd configs
+  gitsync
+  cd ..
 
-cd unifi
-gitsync
-cd ..
+  cd writings
+  gitsync
+  cd ..
 
-cd pastablaster
-gitsync
-cd ..
+  cd unifi
+  gitsync
+  cd ..
 
-cd refogen
-gitsync
-cd ..
+  cd pastablaster
+  gitsync
+  cd ..
 
-cd enigmax
-gitsync
-cd ..
+  cd refogen
+  gitsync
+  cd ..
 
-cd saitama
-gitsync_noreset
-cd ..
+  cd enigmax
+  gitsync
+  cd ..
 
-cd eviloutpost.github.io
-gitsync
-cd ..
+  cd saitama
+  gitsync_noclean
+  cd ..
+fi
 
-cd notes
-gitsync
-cd ..
+if [ "$1" = "evil" ] || [ "$#" = 0 ]; then
+  echo "Syncing Evil Outpost repositories..."
+
+  cd eviloutpost.github.io
+  gitsync
+  cd ..
+fi
+
+if [ "$1" = "aem" ] || [ "$#" = 0 ]; then
+  echo "Syncing A&M repositories..."
+
+  cd notes
+  gitsync
+  cd ..
+
+  cd tech-doc-gen
+  gitsync_noclean
+  cd ..
+fi
