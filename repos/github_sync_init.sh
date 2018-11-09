@@ -19,3 +19,4 @@ git clone https://github.com/eviloutpost/eviloutpost.github.io
 # aem
 git clone https://SimoneCipriani@bitbucket.org/SimoneCipriani/notes.git
 git clone https://github.com/aem-progetti/tech-doc-gen.git
+git clone https://github.com/aem-progetti/nodejs-app-template.git
