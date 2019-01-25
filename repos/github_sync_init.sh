@@ -20,3 +20,5 @@ git clone https://github.com/eviloutpost/eviloutpost.github.io
 git clone https://SimoneCipriani@bitbucket.org/SimoneCipriani/notes.git
 git clone https://scipriani-aem@github.com/aem-progetti/tech-doc-gen.git
 git clone https://scipriani-aem@github.com/aem-progetti/nodejs-app-template.git
+git clone https://scipriani-aem@github.com/aem-progetti/m44-editor-service.git
+git clone https://scipriani-aem@github.com/aem-progetti/m44-editor-front.git
