@@ -78,10 +78,6 @@ if [ "$1" = "aem" ] || [ "$#" = 0 ]; then
   gitsync_noclean
   cd ..
 
-  cd nodejs-app-template 
-  gitsync_noclean
-  cd ..
-
   cd m44-editor-service
   gitsync
   cd ..
