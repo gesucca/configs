@@ -90,8 +90,8 @@ if [ "$1" = "aem" ] || [ "$#" = 0 ]; then
   gitsync
   cd ..
 
-  cd psv
+  cd psc
   gitsync_noclean
-  cd..
+  cd ..
 
 fi
