@@ -24,3 +24,4 @@ git clone https://scipriani-aem@github.com/aem-progetti/m44-editor-service.git
 git clone https://scipriani-aem@github.com/aem-progetti/m44-editor-front.git
 git clone https://scipriani-aem@github.com/aem-progetti/psv.git
 git clone https://scipriani-aem@github.com/aem-progetti/psc.git
+git clone https://scipriani-aem@github.com/aem-progetti/psr.git

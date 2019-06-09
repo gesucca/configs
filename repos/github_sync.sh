@@ -94,4 +94,8 @@ if [ "$1" = "aem" ] || [ "$#" = 0 ]; then
   gitsync_noclean
   cd ..
 
+  cd psr
+  gitsync
+  cd..
+
 fi
