@@ -96,6 +96,10 @@ if [ "$1" = "aem" ] || [ "$#" = 0 ]; then
 
   cd psr
   gitsync
-  cd..
+  cd ..
+  
+  cd case-extractor
+  gitsync_noclean
+  cd ..
 
 fi
