@@ -33,6 +33,10 @@ if [ "$1" = "mine" ] || [ "$#" = 0 ]; then
   cd bm-back
   gitsync_noclean
   cd ..
+  
+  cd bm-front
+  gitsync_noclean
+  cd ..
 
   cd configs
   gitsync
